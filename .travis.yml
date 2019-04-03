@@ -9,14 +9,17 @@ env:
 go:
   - "1.12"
 
+
 cache:
   directories:
     - $GOPATH/pkg/mod
 
+before_install: cd v3
 install:
   - make setup_ci
 
+before_script: cd v3
 script:
-  - cd v3 && make build
-  - cd v3 && make test
-  - cd v3 && go mod vendor && GO111MODULE=off PATH=$TRAVIS_BUILD_DIR/bin:$PATH make lint
+  - make build
+  - make test
+  - go mod vendor && GO111MODULE=off PATH=$TRAVIS_BUILD_DIR/bin:$PATH make lint
