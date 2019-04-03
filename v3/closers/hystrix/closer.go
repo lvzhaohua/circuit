@@ -6,8 +6,8 @@ import (
 
 	"encoding/json"
 
-	"github.com/cep21/circuit"
-	"github.com/cep21/circuit/faststats"
+	"github.com/cep21/circuit/v3"
+	"github.com/cep21/circuit/v3/faststats"
 )
 
 // Closer is hystrix's default half-open logic: try again ever X ms

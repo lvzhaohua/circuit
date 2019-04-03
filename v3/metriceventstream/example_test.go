@@ -5,9 +5,9 @@ import (
 
 	"log"
 
-	"github.com/cep21/circuit"
-	"github.com/cep21/circuit/metriceventstream"
-	"github.com/cep21/circuit/metrics/rolling"
+	"github.com/cep21/circuit/v3"
+	"github.com/cep21/circuit/v3/metriceventstream"
+	"github.com/cep21/circuit/v3/metrics/rolling"
 )
 
 // This example creates an event stream handler, starts it, then later closes the handler

@@ -3,7 +3,7 @@ package circuit
 import (
 	"time"
 
-	"github.com/cep21/circuit/faststats"
+	"github.com/cep21/circuit/v3/faststats"
 )
 
 // Config controls how a circuit operates

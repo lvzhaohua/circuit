@@ -6,9 +6,9 @@ import (
 
 	"sync"
 
-	"github.com/cep21/circuit"
-	"github.com/cep21/circuit/faststats"
-	"github.com/cep21/circuit/internal/evar"
+	"github.com/cep21/circuit/v3"
+	"github.com/cep21/circuit/v3/faststats"
+	"github.com/cep21/circuit/v3/internal/evar"
 )
 
 // StatFactory helps the process of making stat collectors for circuit breakers

@@ -6,8 +6,8 @@ import (
 
 	"encoding/json"
 
-	"github.com/cep21/circuit"
-	"github.com/cep21/circuit/faststats"
+	"github.com/cep21/circuit/v3"
+	"github.com/cep21/circuit/v3/faststats"
 )
 
 // Opener is ClosedToOpen that opens a circuit after a threshold and % error has been
