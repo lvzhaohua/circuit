@@ -37,7 +37,7 @@ profile_blocking:
 
 # Lint the code
 lint:
-	golangci-lint run
+	cd v3 && golangci-lint run
 
 # Run the example
 run:
