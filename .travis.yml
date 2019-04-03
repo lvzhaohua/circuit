@@ -17,6 +17,6 @@ install:
   - make setup_ci
 
 script:
-  - make build
-  - make test
-  - go mod vendor && GO111MODULE=off PATH=$TRAVIS_BUILD_DIR/bin:$PATH make lint
+  - cd v3 && make build
+  - cd v3 && make test
+  - cd v3 && go mod vendor && GO111MODULE=off PATH=$TRAVIS_BUILD_DIR/bin:$PATH make lint
