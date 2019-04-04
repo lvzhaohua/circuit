@@ -7,12 +7,13 @@ env:
     - GO111MODULE=on
 
 go:
+  - "1.11.4"
   - "1.12"
 
 
-cache:
-  directories:
-    - $GOPATH/pkg/mod
+    #cache:
+    #  directories:
+    #    - $GOPATH/pkg/mod
 
 before_install: cd v3
 install:
